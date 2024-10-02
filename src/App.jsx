@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Restaurants from "./pages/Restaurants";
+import Restaurant from "./pages/Restaurant";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/restaurants" element={<Restaurants />} />
+        <Route path="/restaurant/:id" element={<Restaurant />} />
       </Routes>
     </Router>
   );

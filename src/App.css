@@ -11,7 +11,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 10px;
 }
 
@@ -131,4 +131,19 @@ form button {
   background-color: #7c4ec4;
   color: white;
   font-size: 18px;
+}
+
+/* ============================HOME=================================== */
+
+.home img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.home p {
+  position: absolute;
+  left: 75px;
+  top: 600px;
+  color: white;
 }
