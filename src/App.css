@@ -190,4 +190,34 @@ form input {
     top: 1200px;
     left: 200px;
   }
+
+  .button button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .header img {
+    width: 200px;
+  }
+
+  .restaurant p {
+    font-size: 14px;
+  }
+
+  form input {
+    width: 60%;
+  }
+
+  form button {
+    width: 60%;
+  }
+
+  form label {
+    margin-left: 165px;
+  }
+
+  .passwordToShow {
+    width: 60%;
+  }
 }
