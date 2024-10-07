@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/Home">
+      <Link to="/">
         <img src="../src/assets/logo.png" alt="logo" />
       </Link>
       <div className="button">

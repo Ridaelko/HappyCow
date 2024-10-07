@@ -181,3 +181,13 @@ form input {
   top: 600px;
   color: white;
 }
+
+/* ============================RESPONSIVE=========================== */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .home p {
+    font-size: 30px;
+    top: 1200px;
+    left: 200px;
+  }
+}
