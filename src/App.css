@@ -187,7 +187,7 @@ form input {
 @media (min-width: 601px) and (max-width: 1024px) {
   .home p {
     font-size: 30px;
-    top: 1200px;
+    top: 200px;
     left: 200px;
   }
 
@@ -220,4 +220,7 @@ form input {
   .passwordToShow {
     width: 60%;
   }
+}
+
+@media (min-width: 1025px) {
 }
