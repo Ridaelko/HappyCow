@@ -1,12 +1,26 @@
 import { useState } from "react";
 
+import Icon from "react-icons-kit";
+import { eye } from "react-icons-kit/feather/eye";
+import { eyeOff } from "react-icons-kit/feather/eyeOff";
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const [type, setType] = useState("password");
-  const [icon, setIcon] = useState("");
+  const [icon, setIcon] = useState(eyeOff);
+
+  const handleToogle = () => {
+    if (type === "password") {
+      setIcon(eye);
+      setType("text");
+    } else {
+      setIcon(eyeOff);
+      setType("password");
+    }
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -36,15 +50,20 @@ const Signup = () => {
           }}
         />
         <label htmlFor="password">Password</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
+        <div className="passwordToShow">
+          <input
+            id="password"
+            type={type}
+            placeholder="Password"
+            value={password}
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+          />
+          <span onClick={handleToogle} className="eye">
+            <Icon icon={icon} size={25} />
+          </span>
+        </div>
         <button>Sign Up</button>
       </form>
     </div>
